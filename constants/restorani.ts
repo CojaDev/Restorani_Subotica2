@@ -4736,7 +4736,7 @@ export const RERSTORANI = [
     },
 
     slike: [
-      'http://www.onore.rs/wp-content/uploads/2020/02/AIP-163_71.jpg',
+      'https://visitsubotica.rs/wp-content/uploads/2019/09/ONORE.jpg',
 
       'http://www.onore.rs/wp-content/uploads/2020/02/AIP-146-scaled.jpg',
 
