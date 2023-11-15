@@ -10,7 +10,7 @@ const Navbar = () => {
   const [isMeni, setIsMeni] = useState(false);
   return (
     <nav
-      className="flex w-full fixed top-0 sm:relative sm:bg-transparent bg-gray-100 dark:bg-transparent 
+      className="flex w-full fixed top-0 sm:relative sm:bg-transparent bg-gray-100 sm:dark:bg-transparent  dark:bg-gray-900/95 
     sm:shadow-none shadow-lg flex-between p-4 mb-16 z-40  "
     >
       <Link

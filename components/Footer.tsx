@@ -74,13 +74,12 @@ const Footer = () => {
         </p>
         <p className="text-white">
           Designed by{' '}
-          <a
+          <Link
             href="https://github.com/CojaDev"
-            target="blank"
             className="orange_gradient font-medium hover:saturate-200 transition-all hover:brightness-125"
           >
             CojaDev
-          </a>
+          </Link>
         </p>
       </div>
     </footer>
