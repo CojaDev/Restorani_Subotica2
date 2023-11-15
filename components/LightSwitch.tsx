@@ -7,37 +7,45 @@ type LightProp = {
   showOnSmall: boolean;
 };
 
-// ... (imports remain unchanged)
-
 const LightSwitch = ({ absolute, showOnSmall }: LightProp) => {
-  const getInitialDarkMode = () => {
-    return (
-      localStorage.theme === 'dark' ||
-      (!('theme' in localStorage) &&
-        window.matchMedia('(prefers-color-scheme: dark)').matches)
-    );
-  };
-
-  const [isDark, setIsDark] = useState(getInitialDarkMode);
+  const [isDark, setIsDark] = useState<boolean | null>(null);
 
   useEffect(() => {
-    updateDarkMode();
+    const getInitialDarkMode = () => {
+      if (typeof window !== 'undefined') {
+        const storedTheme = localStorage.getItem('theme');
+        return (
+          storedTheme === 'dark' ||
+          (!storedTheme &&
+            window.matchMedia('(prefers-color-scheme: dark)').matches)
+        );
+      }
+      return false; // Default to light mode if window is not defined
+    };
+
+    setIsDark(getInitialDarkMode());
+  }, []);
+
+  useEffect(() => {
+    if (isDark !== null) {
+      if (isDark) {
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+      }
+    }
   }, [isDark]);
 
-  const updateDarkMode = () => {
-    if (isDark) {
-      document.documentElement.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
-    }
+  const toggler = () => {
+    setIsDark((prevIsDark) => (prevIsDark !== null ? !prevIsDark : false));
   };
 
-  const toggler = () => {
-    setIsDark(!isDark);
-    updateDarkMode();
-  };
+  // Render a loading state if isDark is still null
+  if (isDark === null) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <div

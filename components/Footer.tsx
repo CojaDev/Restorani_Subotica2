@@ -5,7 +5,12 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="p-5 pb-0 bg-black dark:bg-transparent flex-center flex-col dark:border-t dark:border-white w-screen  m-0 mt-36  overflow-hidden">
+    <footer
+      className="p-5 pb-0 bg-black/70 dark:bg-transparent flex-center flex-col dark:border-t dark:border-white w-screen  m-0 mt-36  overflow-hidden "
+      style={{
+        backgroundImage: `radial-gradient(circle at right center, #131313, transparent 1580px),radial-gradient(circle at left center, #131313, transparent 1580px)`,
+      }}
+    >
       <div className="flex w-full py-16 max-w-7xl mx-auto sm:px-16 px-0 flex-wrap">
         <div className="flex flex-col p-2   flex-auto sm:flex-1 ">
           <h4 className="text-white text-3xl">
@@ -41,7 +46,7 @@ const Footer = () => {
             <Link
               key={linkIndex}
               href={link.link}
-              className="p-2 pl-0 text-white"
+              className="m-2 ml-0 text-white"
             >
               {link.text}
             </Link>
@@ -56,7 +61,7 @@ const Footer = () => {
             <Link
               key={linkIndex}
               href={link.link}
-              className="p-2 pl-0 text-white"
+              className="m-2 ml-0 text-white"
             >
               {link.text}
             </Link>
