@@ -275,10 +275,26 @@ html.lenis {
   min-height: 195px;
   min-width: 255px;
 }
+.card_img_res {
+  min-height: 195px;
+  min-width: 260px;
+  max-height: 195px;
+  max-width: 260px;
+}
 @media screen and (max-width: 640px) {
   .card_img {
     min-height: 270px;
     min-width: 335px;
+  }
+  .card_img_res {
+    min-height: 300px;
+    min-width: 410px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .card_img {
+    min-height: 200px;
+    min-width: 265px;
   }
 }
 .slider {
