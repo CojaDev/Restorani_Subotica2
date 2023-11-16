@@ -8,7 +8,7 @@ const Footer = () => {
     <footer
       className="p-5 pb-0 bg-black/70 dark:bg-transparent flex-center flex-col dark:border-t dark:border-white w-screen  m-0 mt-36  overflow-hidden "
       style={{
-        backgroundImage: `radial-gradient(circle at right center, #131313, transparent 1580px),radial-gradient(circle at left center, #131313, transparent 1580px)`,
+        backgroundImage: `radial-gradient(circle at right center, #131313, transparent 1480px),radial-gradient(circle at left center, #131313, transparent 1480px)`,
       }}
     >
       <div className="flex w-full py-16 max-w-7xl mx-auto sm:px-16 px-0 flex-wrap">
@@ -25,7 +25,12 @@ const Footer = () => {
             {SOCIALS.map((social, index) => (
               <div key={index} draggable="false" className="flex flex-1  mt-3 ">
                 {social.links.map((link, linkIndex) => (
-                  <Link key={linkIndex} href={link.link} className="p-2 pl-0">
+                  <Link
+                    key={linkIndex}
+                    href={link.link}
+                    target="blank"
+                    className="p-2 pl-0"
+                  >
                     <Image
                       src={link.img}
                       alt={social.title}
