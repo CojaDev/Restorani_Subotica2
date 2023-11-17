@@ -237,7 +237,7 @@ html.lenis {
 }
 
 .dropdown_link {
-  @apply text-sm dark:text-white text-gray-700 hover:text-gray-500 font-medium;
+  @apply text-base dark:text-white text-gray-700 hover:text-gray-500 font-medium cursor-pointer;
 }
 
 .flex-center {

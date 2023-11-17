@@ -16,7 +16,7 @@ const Footer = () => {
           <h4 className="text-white text-3xl">
             Restorani <p className="orange_gradient">Subotica</p>
           </h4>
-          <div className="w-[17%] h-1 bg-orange-400 mb-4 mt-3" />
+          <div className="w-[17%] h-1 bg-orange-400 mb-4 mt-3 rounded-sm" />
           <p className="text-white">
             Otkrijte najbolje ukuse grada uz našu ekskluzivnu selekciju
             restorana i jelovnika. Vaše gastronomsko putovanje počinje ovde.
@@ -46,7 +46,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col p-2 flex-1 ">
           <h4 className="text-white text-xl">{FOOTER[0].title}</h4>
-          <div className="w-[17%] h-1 bg-orange-400 mb-4 mt-3" />
+          <div className="w-[17%] h-1 bg-orange-400 mb-4 mt-3 rounded-sm" />
           {FOOTER[0].links.map((link, linkIndex) => (
             <Link
               key={linkIndex}
@@ -60,7 +60,7 @@ const Footer = () => {
 
         <div className="flex flex-col p-2 flex-1">
           <h4 className="text-white text-xl">{FOOTER[1].title}</h4>
-          <div className="w-[17%] h-1 bg-orange-400 mb-4 mt-3" />
+          <div className="w-[17%] h-1 bg-orange-400 mb-4 mt-3 rounded-sm" />
 
           {FOOTER[1].links.map((link, linkIndex) => (
             <Link

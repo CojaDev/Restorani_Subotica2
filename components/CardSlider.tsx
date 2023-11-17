@@ -67,7 +67,7 @@ const CardSlider = ({ naslov, lista, flip }: slideProps) => {
   useEffect(() => {
     let slider = document.getElementById(`${naslov}`);
     if (slider) {
-      slider.scrollLeft -= slider.clientWidth + 10;
+      slider.scrollLeft -= slider.clientWidth + 2500;
       console.log('fliped');
     }
   }, [flip]);
