@@ -28,7 +28,6 @@ const Restorani = () => {
   const dayName = days[new Date().getDay()];
 
   const [isOpen, setIsOpen] = useState(false);
-  const [isOpen2, setIsOpen2] = useState(false);
 
   const [sorte, setSorte] = useState([
     { text: 'Najnovije' },
@@ -37,25 +36,90 @@ const Restorani = () => {
   ]);
 
   const [value, setValue] = useState(sorte[0].text);
-  const [kategorija, SetKategorija] = useState('Sve');
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-  const toggleMenu2 = () => {
-    setIsOpen2(!isOpen2);
+
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const filteredRestorani = RERSTORANI.filter((restoran) =>
+    restoran.naziv.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+  const sortedRestorani = [...filteredRestorani].sort((a: any, b: any) => {
+    // Implement sorting logic based on the selected value
+    // For simplicity, assuming sorting is based on creation date
+    switch (value) {
+      case 'Najnovije':
+        return b.id - a.id;
+      case 'Najstarije':
+        return a.id - b.id;
+      case 'Popularno':
+        a.id - b.id;
+        return 0;
+      default:
+        return 0;
+    }
+  });
+
+  const handleSearchChange = (event: any) => {
+    setSearchQuery(event.target.value);
   };
 
   return (
     <section className="flex flex-col w-full sm:p-0 p-4">
-      <div className="w-full relative flex-col flex-center  p-2 mb-8 mt-20 sm:mt-0">
+      <div className="w-full relative flex-col flex-center  p-2 mb-4 mt-20 sm:mt-0">
         <h1 className="dark:text-white text-5xl font-semibold p-2 ">
           Restorani
         </h1>
-        <div className="w-[12%] h-1 bg-orange-400 mb-4 mt-3 rounded-sm" />
+        <div className=" w-[20%] sm:w-[12%] h-1 bg-orange-400 mb-0 mt-3 rounded-sm" />
       </div>
-      <div className=" flex flex-row-reverse flex-wrap w-full  gap-2.5">
-        {RERSTORANI.map((restoran: any) => (
+      <div className="flex-between  dark:bg-slate-200/20 bg-slate-400/30 mb-5 relative rounded-md  p-2 gap-2">
+        <input
+          type="text"
+          className="rounded-md p-1 mr-2"
+          placeholder="Pretraži.."
+          value={searchQuery}
+          onChange={handleSearchChange}
+        />
+
+        <div className="flex-center relative sm:flex-row flex-col  ">
+          <button
+            onClick={toggleMenu}
+            className="dark:text-white flex gap-1 p-1 "
+          >
+            Prvo {value}
+            <Image
+              src={isOpen ? '/up.png' : '/down.png'}
+              alt="icon"
+              width={15}
+              height={15}
+              className="dark:invert mt-1  sm:rotate-90 rotate-0}"
+            />
+          </button>
+          {isOpen && (
+            <ul className="flex gap-2 z-50  sm:flex-row flex-col  transition-all">
+              {sorte.map(
+                (rec: any) =>
+                  rec.text !== value && (
+                    <li
+                      key={rec.text}
+                      onClick={() => {
+                        setValue(rec.text);
+                        setIsOpen(false);
+                      }}
+                      className=" p-1  text-left font-medium cursor-pointer dark:text-white"
+                    >
+                      Prvo {rec.text}
+                    </li>
+                  )
+              )}
+            </ul>
+          )}
+        </div>
+      </div>
+      <div className=" flex  flex-wrap w-full  gap-2.5">
+        {sortedRestorani.map((restoran: any) => (
           <div
             className="relative select-none rounded-b-xl rounded-t-md p-2.5 bg-gray-800/20 dark:bg-white/20  transition-all flex-1 "
             key={restoran.id}
