@@ -287,16 +287,26 @@ html.lenis {
     min-width: 335px;
   }
   .card_img_res {
-    min-height: 300px;
-    min-width: 410px;
+    min-height: 210px;
+    min-width: 320px;
+    max-height: 210px;
+    max-width: 320px;
   }
 }
 @media screen and (max-width: 340px) {
   .card_img {
-    min-height: 200px;
-    min-width: 265px;
+    min-height: 180px;
+    min-width: 245px;
+  }
+  .card_img_res {
+    min-height: 60px;
+    min-width: 125px;
+  }
+  .xs-flex-wrap {
+    flex-wrap: wrap;
   }
 }
+
 .slider {
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;

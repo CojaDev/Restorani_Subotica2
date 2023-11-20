@@ -1,5 +1,4 @@
 'use client';
-import React from 'react';
 import { RERSTORANI } from '@/constants/restorani';
 import MyCustomImage from '@/components/MyCustomImage';
 import Link from 'next/link';
@@ -47,8 +46,6 @@ const Restorani = () => {
     restoran.naziv.toLowerCase().includes(searchQuery.toLowerCase())
   );
   const sortedRestorani = [...filteredRestorani].sort((a: any, b: any) => {
-    // Implement sorting logic based on the selected value
-    // For simplicity, assuming sorting is based on creation date
     switch (value) {
       case 'Najnovije':
         return b.id - a.id;
@@ -67,14 +64,14 @@ const Restorani = () => {
   };
 
   return (
-    <section className="flex flex-col w-full sm:p-0 p-4">
+    <section className="flex flex-col w-full sm:p-0 p-4 overflow-x-hidden">
       <div className="w-full relative flex-col flex-center  p-2 mb-4 mt-20 sm:mt-0">
         <h1 className="dark:text-white text-5xl font-semibold p-2 ">
           Restorani
         </h1>
         <div className=" w-[20%] sm:w-[12%] h-1 bg-orange-400 mb-0 mt-3 rounded-sm" />
       </div>
-      <div className="flex-between  dark:bg-slate-200/20 bg-slate-400/30 mb-5 relative rounded-md  p-2 gap-2">
+      <div className="flex-between  dark:bg-slate-200/20 bg-slate-400/30 mb-5 relative rounded-md  p-2 gap-2 xs-flex-wrap">
         <input
           type="text"
           className="rounded-md p-1 mr-2"
@@ -86,15 +83,15 @@ const Restorani = () => {
         <div className="flex-center relative sm:flex-row flex-col  ">
           <button
             onClick={toggleMenu}
-            className="dark:text-white flex gap-1 p-1 "
+            className="dark:text-white flex sm:flex-row flex-col  gap-1 p-1 "
           >
             Prvo {value}
             <Image
               src={isOpen ? '/up.png' : '/down.png'}
               alt="icon"
-              width={15}
-              height={15}
-              className="dark:invert mt-1  sm:rotate-90 rotate-0}"
+              width={12}
+              height={12}
+              className="dark:invert mt-1.5 mx-auto sm:rotate-90 rotate-0}"
             />
           </button>
           {isOpen && (
