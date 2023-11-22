@@ -255,6 +255,9 @@ html.lenis {
 .flex-between {
   @apply flex justify-between items-center;
 }
+.flex-between2 {
+  @apply flex justify-between items-center sm:items-start;
+}
 
 .scroll-none::-webkit-scrollbar {
   display: none;
