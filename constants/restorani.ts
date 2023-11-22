@@ -1,7 +1,7 @@
 export const RERSTORANI = [
   {
     naziv: 'Boss',
-    opis: 'Opis restorana Boss',
+    opis: 'Sada već davne 1986. u Subotici je otvorena - tada moderna i daleko ispred svog vremena - Boss picerija.Upečatljivo ime, i potpuno novi, moderni koncept, brzo su postali prepoznatljivi, a stalna težnja ka kvalitetu rezultirala je uspehom i širenjem ponude i kapaciteta.',
     brojTel: '024 / 55 11 11',
     adresa: 'Matije Korvina 7-8, Subotica',
     websajt: 'https://www.bosscaffe.com/',

@@ -5,6 +5,7 @@ import MyCustomImage from '@/components/MyCustomImage';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
+import Kategorije404 from '@/components/Kategorije404';
 
 type nameprop = {
   params: any;
@@ -22,19 +23,7 @@ const KategorijePage = ({ params }: nameprop) => {
 
   if (!kategorija) {
     console.log(params.kategorija);
-    return (
-      <div className="mt-36 mb-5 flex-col flex-center">
-        <p className="dark:text-white text-9xl">404</p>
-        <p className="dark:text-white text-xl">Ova kategorija ne postoji</p>
-        <Link
-          href={'/'}
-          draggable="false"
-          className="dark:text-white mt-3  outline_btn"
-        >
-          <p className="text-xl">Vrati se nazad</p>
-        </Link>
-      </div>
-    );
+    return <Kategorije404 />;
   }
 
   const categoryChecker = (naziv: string) => {
