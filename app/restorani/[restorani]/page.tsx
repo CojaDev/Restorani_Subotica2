@@ -71,14 +71,6 @@ const RestoranPage = ({ params }: nameprop) => {
         >
           Mapa
         </button>
-        <button
-          className="p-2 dark:text-white bg-slate-400/40 dark:bg-slate-200/50 hover:bg-white/60 dark:hover:bg-slate-500/60 transition-all   uppercase sm:w-32 sm:flex-none flex-1"
-          onClick={() => {
-            setSectionTag(4);
-          }}
-        >
-          Utisci
-        </button>
       </div>
       <div className="bg-slate-400/30 dark:bg-slate-300/40 w-full p-5 pt-2 mt-5 rounded-md">
         {sectionTag === 1 && (
@@ -124,13 +116,13 @@ const RestoranPage = ({ params }: nameprop) => {
                             {jelo.opis}
                           </p>
                           {jelo.cenaMala === jelo.cenaVelika ? (
-                            <div className="flex my-auto">
+                            <div className="flex mt-auto mb-2">
                               <p className="dark:text-white font-semibold">
                                 Cena: {jelo.cenaMala} RSD
                               </p>
                             </div>
                           ) : (
-                            <div className="flex my-auto">
+                            <div className="flex mt-auto mb-2">
                               <p className="dark:text-white font-semibold">
                                 Mala Porcija {jelo.cenaMala} RSD
                               </p>
@@ -141,7 +133,7 @@ const RestoranPage = ({ params }: nameprop) => {
                           )}
                         </div>
                         <a
-                          className="text-center p-2 border-2 border-orange-500 bg-orange-500 rounded-2xl mt-auto font-medium"
+                          className="text-center p-2 border-2 border-orange-500 bg-orange-500 rounded-2xl mt-auto font-medium hover:bg-orange-500/80 transition-all"
                           href={`tel:${restoran.brojTel}`}
                         >
                           Naruči
@@ -221,8 +213,6 @@ const RestoranPage = ({ params }: nameprop) => {
             />
           </div>
         )}
-
-        {sectionTag === 4 && <h2 className="dark:text-white">Utisci</h2>}
       </div>
     </div>
   );

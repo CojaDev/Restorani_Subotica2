@@ -157,6 +157,7 @@ html.lenis {
 .outline_btn {
   @apply rounded-full border border-black dark:border-white bg-transparent py-1.5 px-4 md:px-5 text-black dark:text-white transition-all hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black text-center text-sm  flex items-center justify-center;
 }
+
 .black_btn_mobile {
   @apply rounded-none border-b w-full border-black dark:border-white py-5 px-5 bg-black dark:bg-white transition-all text-white dark:text-black text-center dark:hover:bg-black dark:hover:text-white hover:bg-white hover:text-black  flex items-center justify-center;
 }
@@ -170,9 +171,15 @@ html.lenis {
 .head_text {
   @apply mt-5 text-6xl font-extrabold leading-[1.15] dark:text-white text-black sm:text-8xl;
 }
+.head_text2 {
+  @apply mt-5 text-6xl font-extrabold leading-[1.15]  sm:text-[80px];
+}
 
 .orange_gradient {
   @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
+}
+.orange_gradient2 {
+  @apply bg-gradient-to-r from-amber-400 via-orange-500 to-yellow-500 bg-clip-text text-transparent;
 }
 .orange_gradientlogo {
   @apply bg-gradient-to-r from-amber-600 via-orange-600 to-yellow-600 bg-clip-text text-transparent;
@@ -188,6 +195,9 @@ html.lenis {
 
 .desc {
   @apply mt-5 text-lg text-gray-700 dark:text-white sm:text-xl max-w-2xl;
+}
+.desc2 {
+  @apply text-lg text-gray-700 dark:text-white sm:text-xl max-w-2xl;
 }
 
 .search_input {

@@ -1,5 +1,11 @@
 export const NAV_LINKS = [
   {
+    href: '/',
+    key: 'po',
+    label: 'Početna',
+    variant: 'outline_btn',
+  },
+  {
     href: '/restorani',
     key: 'restorani',
     label: 'Svi Restorani',
@@ -9,7 +15,7 @@ export const NAV_LINKS = [
   {
     href: '/zavlasnike',
     key: 'vlasnik',
-    label: 'Za Vlasnike ',
+    label: 'Pridruži Se ',
     variant: 'black_btn',
   },
 ];
@@ -121,7 +127,7 @@ export const FOOTER = [
       },
 
       {
-        text: 'Za vlasnike',
+        text: 'Pridruži se',
         link: '/zavlasnike',
       },
       {
