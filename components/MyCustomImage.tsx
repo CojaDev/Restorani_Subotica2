@@ -16,6 +16,7 @@ const MyCustomImage = (props: MyCustomImageProps) => {
         return url.toString();
       }}
       draggable="false"
+      loading="lazy"
       width={props.width}
       height={props.height}
     />

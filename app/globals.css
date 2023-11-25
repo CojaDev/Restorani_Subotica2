@@ -344,3 +344,11 @@ html.lenis {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+}
+
+.leaflet-container .leaflet-control-attribution a svg {
+  display: none !important;
+}

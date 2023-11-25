@@ -2,7 +2,7 @@ export const NAV_LINKS = [
   {
     href: '/restorani',
     key: 'restorani',
-    label: 'Restorani',
+    label: 'Svi Restorani',
     variant: 'outline_btn',
   },
 
@@ -87,51 +87,45 @@ export const DISCOVERY = [
 ];
 export const FOOTER = [
   {
-    title: 'Learn More',
+    title: 'Kategorije',
     links: [
       {
-        text: 'About Hilink',
-        link: '/restorani',
+        text: 'Fast Food',
+        link: '/restorani/kategorije/fast',
       },
       {
-        text: 'Press Releases',
-        link: '/restorani',
+        text: 'Restoran',
+        link: '/restorani/kategorije/restoran',
       },
       {
-        text: 'Environment',
-        link: '/restorani',
+        text: 'Picerija',
+        link: '/restorani/kategorije/picerija',
       },
       {
-        text: 'Jobs',
-        link: '/restorani',
+        text: 'Kafana',
+        link: '/restorani/kategorije/kafana',
       },
+
       {
-        text: 'Privacy Policy',
-        link: '/restorani',
+        text: 'Kafić',
+        link: '/restorani/kategorije/kafic',
       },
     ],
   },
   {
-    title: 'Our Community',
+    title: 'Info',
     links: [
       {
-        text: 'About Hilink',
+        text: 'Svi restorani',
         link: '/restorani',
       },
+
       {
-        text: 'Press Releases',
-        link: '/restorani',
+        text: 'Za vlasnike',
+        link: '/zavlasnike',
       },
       {
-        text: 'Environment',
-        link: '/restorani',
-      },
-      {
-        text: 'Jobs',
-        link: '/restorani',
-      },
-      {
-        text: 'Privacy Policy',
+        text: 'Mapa svih objekata',
         link: '/restorani',
       },
     ],

@@ -5,6 +5,7 @@ export const RERSTORANI = [
     brojTel: '024 / 55 11 11',
     adresa: 'Matije Korvina 7-8, Subotica',
     websajt: 'https://www.bosscaffe.com/',
+    kordinate: [46.10163930729611, 19.66827987042927],
     profilna:
       'https://scontent.fbeg4-1.fna.fbcdn.net/v/t39.30808-6/326727497_744809046979116_7144892329854565606_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=rwuMUv_Ghq4AX-oDCy-&_nc_ht=scontent.fbeg4-1.fna&oh=00_AfBWkiaF5zzCMm1X0bkoXv4rOF0j-0DCn0DdkklJFwQKzg&oe=6523D642',
     radnoVreme: {
@@ -38,7 +39,7 @@ export const RERSTORANI = [
       },
     },
     meni: {
-      glavnaJela: [
+      'Glavna Jela': [
         {
           naziv: 'Ćureci file',
           tip: 'Ćuretina',
@@ -1216,6 +1217,7 @@ export const RERSTORANI = [
     brojTel: '024 / 55 66 55',
     adresa: 'Vase Stajića 1, Subotica',
     websajt: 'https://www.bestfood.rs/',
+    kordinate: [46.10253689350924, 19.666161007126437],
     profilna:
       'https://scontent.fbeg4-1.fna.fbcdn.net/v/t39.30808-6/312228931_558664206262278_568543633193672677_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=1SzqCvj5Gl8AX8kid4_&_nc_ht=scontent.fbeg4-1.fna&oh=00_AfBbGyWvovVkBQN3atyWrRcQokLaMWPqBp26yEzl6sxVMg&oe=6523A29B',
     radnoVreme: {
@@ -1623,6 +1625,7 @@ export const RERSTORANI = [
     brojTel: '063 / 874 24 01',
     adresa: 'Park Rajhl Ferenca, Subotica',
     websajt: 'https://www.facebook.com/greenfood001/',
+    kordinate: [46.1004204988515, 19.66991817728649],
     profilna:
       'https://scontent.fbeg4-1.fna.fbcdn.net/v/t39.30808-1/274601038_358447876150724_6657377006994741215_n.jpg?stp=cp0_dst-jpg_e15_p120x120_q65&_nc_cat=110&ccb=1-7&_nc_sid=5fac6f&_nc_ohc=0NuqIG7niAcAX-hDsD8&_nc_ht=scontent.fbeg4-1.fna&oh=00_AfBRDrDtQwlrXWQA5ZZv3D9bNKGBsu_Cu8iK7_L7PnkiPg&oe=6524A3B3',
     radnoVreme: {
@@ -1850,8 +1853,7 @@ export const RERSTORANI = [
           opis: '350g',
           cenaMala: 350,
           cenaVelika: 350,
-          slika:
-            'https://cdn.bestfood.rs/w/960/h/720/media/foods/muckalica-600x392.png',
+          slika: '',
         },
       ],
       'Salate i prilozi': [
@@ -1926,6 +1928,7 @@ export const RERSTORANI = [
     brojTel: '024/556-008',
     adresa: ' Vuka Karadžića 17, 24000 Subotica',
     websajt: 'https://batessubotica.com/rs/',
+    kordinate: [46.102774256515005, 19.666023177253354],
     profilna:
       'https://batessubotica.com/uploads/webshop/restoran-bates-642a78ff0ca1a.png',
     radnoVreme: {
@@ -2549,6 +2552,7 @@ export const RERSTORANI = [
     brojTel: '024/555-001',
     adresa: ' Matije Korvina 13, Subotica',
     websajt: 'https://renesansa.orderingninja.com/',
+    kordinate: [46.10228362766158, 19.667774647399565],
     profilna:
       'https://scontent.fbeg4-1.fna.fbcdn.net/v/t39.30808-6/326465652_927330951622970_2409873350660107671_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=2wx0QqVqgG8AX8EsNz5&_nc_ht=scontent.fbeg4-1.fna&oh=00_AfDJTtPvoqojJQOPQV1gGcCJFRz4bHnn0bTwTz_xEH6NKA&oe=65258817',
     radnoVreme: {
@@ -3931,6 +3935,7 @@ export const RERSTORANI = [
     brojTel: '024/753-447',
     adresa: 'Park heroja 15| 24413',
     websajt: 'https://www.elittepalic.rs/homepage/',
+    kordinate: [46.099085245381175, 19.760796039709952],
     profilna:
       'https://www.elittepalic.rs/wp-content/uploads/2016/08/elittePalicLogo.png',
     radnoVreme: {
@@ -4137,6 +4142,7 @@ export const RERSTORANI = [
     brojTel: '024/753-447',
     adresa: 'Beogradski put 65, Subotica',
     websajt: 'https://www.crunchsu.com/',
+    kordinate: [46.088095073732816, 19.668053352204115],
     profilna:
       'https://scontent.fbeg5-1.fna.fbcdn.net/v/t39.30808-6/219415220_10223707194940549_5343896566759220732_n.jpg?stp=dst-jpg_p526x296&_nc_cat=111&ccb=1-7&_nc_sid=1ac024&_nc_ohc=H2W_AP3_UAoAX9o1_Rd&_nc_ht=scontent.fbeg5-1.fna&oh=00_AfDtzSZuJVi19t6ogmWl51lbZZh537lf3kuXtIkPiwQsYw&oe=6527F3C0',
     radnoVreme: {
@@ -4343,6 +4349,7 @@ export const RERSTORANI = [
     brojTel: '024/673 750',
     adresa: 'Vladimira Nazora 3, Subotica',
     websajt: 'https://dolce-vita.rs/',
+    kordinate: [46.10020063741935, 19.668056268546174],
     profilna:
       'https://dolce-vita.rs/wp-content/uploads/2021/11/xLOGO-retina.png.pagespeed.ic.QDckZvV9Pm.webp',
     radnoVreme: {
@@ -4549,6 +4556,7 @@ export const RERSTORANI = [
     brojTel: '024/687-777',
     adresa: 'Partizanskih Baza 30e, Subotica,',
     websajt: 'https://www.onore.rs/our-menu-classic/',
+    kordinate: [46.10535072592257, 19.69020910390936],
     profilna:
       'http://www.onore.rs/wp-content/uploads/2020/02/Webp.net-resizeimage.png',
     radnoVreme: {
@@ -4755,6 +4763,7 @@ export const RERSTORANI = [
     brojTel: '024/753-447',
     adresa: 'Maksima Gorkog 36, Subotica',
     websajt: 'https://www.zlatnihamby.com/index1.html',
+    kordinate: [46.09649159572189, 19.661963093757915],
     profilna: 'https://www.zlatnihamby.com/images/uploads/LOGO-mali.png',
     radnoVreme: {
       monday: {
@@ -4960,6 +4969,7 @@ export const RERSTORANI = [
     brojTel: '065/453 49 42',
     adresa: 'Ferenca Sepa 3, Subotica 24000',
     websajt: 'https://restorandrina.rs/',
+    kordinate: [46.10943989807292, 19.655522705658843],
     profilna:
       'https://restorandrina.rs/wp-content/uploads/2022/08/Latinica-1.png',
     radnoVreme: {
@@ -5166,6 +5176,7 @@ export const RERSTORANI = [
     brojTel: '024/753-447',
     adresa: 'Vase Stajića 7',
     websajt: 'https://wolt.com/sr/srb/subotica/restaurant/gyros-way',
+    kordinate: [46.102993206555155, 19.667740932717468],
     profilna:
       'https://scontent.fbeg5-1.fna.fbcdn.net/v/t39.30808-6/362263310_775580824572696_4818836882720587647_n.jpg?stp=dst-jpg_s640x640&_nc_cat=100&ccb=1-7&_nc_sid=49d041&_nc_ohc=ow16m7ZdotsAX-EU4W8&_nc_ht=scontent.fbeg5-1.fna&oh=00_AfCEqpLzwJbpMAkekmLCNEWWPYQgPqtol0hK82gRw0vULA&oe=6528B432',
     radnoVreme: {
@@ -5371,6 +5382,7 @@ export const RERSTORANI = [
     brojTel: '062/962 54 04',
     adresa: 'Vase Stajića 9, Subotica, Serbia',
     websajt: 'https://www.elittepalic.rs/homepage/',
+    kordinate: [46.10303463046631, 19.667888804118743],
     profilna:
       'https://www.elittepalic.rs/wp-content/uploads/2016/08/elittePalicLogo.png',
     radnoVreme: {
@@ -5577,6 +5589,7 @@ export const RERSTORANI = [
     brojTel: '024/753-447',
     adresa: 'Park heroja 15| 24413',
     websajt: 'https://minipani.com/',
+    kordinate: [46.09968820926403, 19.665512402245476],
     profilna:
       'https://www.elittepalic.rs/wp-content/uploads/2016/08/elittePalicLogo.png',
     radnoVreme: {
@@ -5781,6 +5794,7 @@ export const RERSTORANI = [
     brojTel: '069/807 70 42',
     adresa: 'Nade Dimić 17a',
     websajt: 'https://www.elittepalic.rs/homepage/',
+    kordinate: [46.08703685873352, 19.671548354382004],
     profilna:
       'https://www.elittepalic.rs/wp-content/uploads/2016/08/elittePalicLogo.png',
     radnoVreme: {
@@ -5987,6 +6001,7 @@ export const RERSTORANI = [
     brojTel: '024/753-447',
     adresa: 'Park heroja 15| 24413',
     websajt: 'https://www.elittepalic.rs/homepage/',
+    kordinate: [46.100354271857846, 19.67428501468472],
     profilna:
       'https://www.elittepalic.rs/wp-content/uploads/2016/08/elittePalicLogo.png',
     radnoVreme: {

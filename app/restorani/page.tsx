@@ -4,7 +4,6 @@ import MyCustomImage from '@/components/MyCustomImage';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
-import { KATEGORIJE } from '@/constants';
 
 const Restorani = () => {
   const categoryChecker = (naziv: string) => {
@@ -67,7 +66,7 @@ const Restorani = () => {
     <section className="flex flex-col w-full sm:p-0 p-4 overflow-x-hidden">
       <div className="w-full relative flex-col flex-center  p-2 mb-4 mt-20 sm:mt-0">
         <h1 className="dark:text-white text-5xl font-semibold p-2 ">
-          Restorani
+          Svi Restorani
         </h1>
         <div className=" w-[20%] sm:w-[12%] h-1 bg-orange-400 mb-0 mt-3 rounded-sm" />
       </div>
