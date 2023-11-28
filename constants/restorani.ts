@@ -5992,7 +5992,6 @@ export const RERSTORANI = [
     ocena: 0,
     dostava: 'da',
     vrsta: 'Fast Food',
-    status: 'Otvoreno',
     id: '15',
   },
   {

@@ -122,16 +122,16 @@ export const FOOTER = [
     title: 'Info',
     links: [
       {
+        text: 'Pridruži se',
+        link: '/zavlasnike',
+      },
+      {
         text: 'Svi restorani',
         link: '/restorani',
       },
 
       {
-        text: 'Pridruži se',
-        link: '/zavlasnike',
-      },
-      {
-        text: 'Mapa svih objekata',
+        text: 'Kontaktiraj nas',
         link: '/restorani',
       },
     ],
@@ -155,4 +155,59 @@ export const SOCIALS = [
       },
     ],
   },
+];
+export const FEATURES = [
+  {
+    naslov: 'Povećajte prodaju',
+    desc: 'Držite kuhinju zaposlenom. Pridružite se dobro podmazanoj marketinškoj mašini i posmatrajte porudžbine kako stižu na vrata i online.',
+    slika: '/stonks.png',
+    key: '1',
+  },
+  {
+    naslov: `Dosegnite više kupaca`,
+    desc: 'Upoznajte ih i zadržite. Privucite nove lokalne kupce i zadržavajte ih da se stalno vraćaju.',
+    slika: '/rating.png',
+    key: '2',
+  },
+  {
+    naslov: 'Koristite naše usluge',
+    desc: 'Za firme velike i male. Bez obzira na vašu veličinu, imamo alate, podršku za biznis i uštede koje će vam pomoći u rastu vašeg poslovanja.',
+    slika: '/support.png',
+    key: '3',
+  },
+];
+export const STEPS = [
+  {
+    naslov: 'Popunite Formu',
+    desc: 'Nema komplikovanih koraka. Samo popunite jednostavnu formu ispod sa osnovnim informacijama o vašem restoranu.',
+    key: '1',
+  },
+  {
+    naslov: `Dodajte Jelovnik i Slike Vaših Specijaliteta`,
+    desc: 'Dodajte jelovnik i slike najukusnijih jela za privlačenje posetilaca. Slike govore više od reči, stoga dodajte vizuelni doživljaj vaših specijaliteta.',
+    key: '2',
+  },
+  {
+    naslov: 'Unapredite Vaš Restoran s Nama',
+    desc: 'Nakon dostavljenih informacija, postajete deo naše platforme i spremni ste za dobrodošlicu novim gostima.',
+    key: '3',
+  },
+];
+export const DANISRP = [
+  'Ponedeljak',
+  'Utorak',
+  'Sreda',
+  'Četvrtak',
+  'Petak',
+  'Subota',
+  'Nedelja',
+];
+export const DANI = [
+  { dan: 'monday', danSrp: 'Ponedeljak' },
+  { dan: 'tuesday', danSrp: 'Utorak' },
+  { dan: 'wednesday', danSrp: 'Sreda' },
+  { dan: 'thursday', danSrp: 'Četvrtak' },
+  { dan: 'friday', danSrp: 'Petak' },
+  { dan: 'saturday', danSrp: 'Subota' },
+  { dan: 'sunday', danSrp: 'Nedelja' },
 ];

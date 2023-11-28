@@ -44,41 +44,49 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        <div className="flex flex-col p-2 flex-1 ">
-          <h4 className="text-white text-xl">{FOOTER[0].title}</h4>
-          <div className="w-[17%] h-1 bg-orange-400 mb-4 mt-3 rounded-sm" />
-          {FOOTER[0].links.map((link, linkIndex) => (
-            <Link
-              key={linkIndex}
-              href={link.link}
-              className="m-2 ml-0 text-white"
-            >
-              {link.text}
-            </Link>
-          ))}
+        <div className="flex flex-col p-2 flex-1  items-start sm:items-center">
+          <div className="flex flex-col flex-1">
+            <h4 className="text-white text-xl font-medium">
+              {FOOTER[0].title}
+            </h4>
+            <div className="w-[57%] h-1 bg-orange-400 mb-1 mt-3 rounded-sm  " />
+            {FOOTER[0].links.map((link, linkIndex) => (
+              <Link
+                key={linkIndex}
+                href={link.link}
+                className="m-1.5 ml-0 text-white hover:text-white/70  transition-all"
+              >
+                {link.text}
+              </Link>
+            ))}
+          </div>
         </div>
 
-        <div className="flex flex-col p-2 flex-1">
-          <h4 className="text-white text-xl">{FOOTER[1].title}</h4>
-          <div className="w-[17%] h-1 bg-orange-400 mb-4 mt-3 rounded-sm" />
+        <div className="flex flex-col p-2 flex-1 items-end sm:items-center">
+          <div className="flex flex-col flex-1">
+            <h4 className="text-white text-xl font-medium">
+              {FOOTER[1].title}
+            </h4>
+            <div className="w-[47%] h-1 bg-orange-400 mb-1 mt-3 rounded-sm" />
 
-          {FOOTER[1].links.map((link, linkIndex) => (
-            <Link
-              key={linkIndex}
-              href={link.link}
-              className="m-2 ml-0 text-white"
-            >
-              {link.text}
-            </Link>
-          ))}
+            {FOOTER[1].links.map((link, linkIndex) => (
+              <Link
+                key={linkIndex}
+                href={link.link}
+                className="m-1.5 ml-0 text-white hover:text-white/70 transition-all"
+              >
+                {link.text}
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
       <div className="border-t border-white/40 w-full flex-between p-8 max-w-7xl mx-auto sm:px-16 px-0">
         <p className="text-white">
-          © Copyright Restorani Subotica. All Rights Reserved
+          © 2023 Restorani Subotica. All Rights Reserved
         </p>
         <p className="text-white">
-          Designed by{' '}
+          Developed by{' '}
           <Link
             href="https://github.com/CojaDev"
             target="blank"
