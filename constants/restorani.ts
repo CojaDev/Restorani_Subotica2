@@ -6222,7 +6222,7 @@ export const RERSTORANI = [
       Burek: [
         {
           naziv: 'Burek Sa Sirom',
-          tip: 'NovaKategorija 0',
+          tip: 'Burek',
           opis: '1/4',
           cenaMala: '180',
           cenaVelika: '180',
@@ -6416,6 +6416,188 @@ export const RERSTORANI = [
       sunday: {
         otvaranje: '',
         zatvaranje: '',
+      },
+    },
+  },
+  {
+    naziv: 'Restoran Shiraz',
+    opis: 'Akcenat je na lokalnim specijalitetima poput riblje čorbe, paprikaša, gulaša, prasećeg i jagnjećeg pečenja i sve onoga što se nekada nalazilo na trpezi vojvođanskih porodica. Za one koji preferiraju internacionalnu kuhinju i crvena mesa, u ponudu smo uvrstili tartar biftek, kao i vrhunske stejkove poput T-bone stejka. Za ljubitelje mesa koji ne vole da eksprerimentišu tu su specijaliteti sa roštilja.',
+    vrsta: 'Restoran',
+    brojTel: '024686220',
+    adresa: 'Tuk Ugarnice 14  Subotica',
+    websajt: 'https://www.restoranshiraz.com/',
+    kordinate: [46.10178085999133, 19.712748754146325],
+    vlasnik: '',
+    imejl: 'shirazdoo23@gmail.com',
+    slike: [
+      'https://static.wixstatic.com/media/2885f7_e5a9214632834d5abadc4f630041a7de~mv2.jpg/v1/fit/w_778,h_783,q_90/2885f7_e5a9214632834d5abadc4f630041a7de~mv2.webp',
+      'https://static.wixstatic.com/media/2885f7_29a6169c158d49858b549fc9ed6734a7~mv2.jpg/v1/fit/w_778,h_783,q_90/2885f7_29a6169c158d49858b549fc9ed6734a7~mv2.webp',
+      'https://static.wixstatic.com/media/2885f7_a798cd84ffbf449486374f35def7dd6f~mv2.jpg/v1/fit/w_778,h_783,q_90/2885f7_a798cd84ffbf449486374f35def7dd6f~mv2.webp',
+      'https://static.wixstatic.com/media/2885f7_09d882b353af47b7a0c1079f3cdd24d3~mv2.jpg/v1/fit/w_778,h_783,q_90/2885f7_09d882b353af47b7a0c1079f3cdd24d3~mv2.webp',
+      'https://static.wixstatic.com/media/2885f7_922aa0703adc40ffb5e72f8f8915a1d0~mv2.jpg/v1/fit/w_778,h_783,q_90/2885f7_922aa0703adc40ffb5e72f8f8915a1d0~mv2.webp',
+    ],
+    meni: {
+      'Predjela i Supe,Čorbe': [
+        {
+          naziv: '',
+          tip: 'Predjela i Supe,Čorbe',
+          opis: '',
+          cenaMala: '',
+          cenaVelika: '',
+          slika:
+            'https://static.wixstatic.com/media/2885f7_16a3b7dca8f94defa4ed8c624e7606ae~mv2.png/v1/fit/w_778,h_783,q_90/2885f7_16a3b7dca8f94defa4ed8c624e7606ae~mv2.webp',
+        },
+      ],
+      'Topla Predjela, Steak i Riblji Specijaliteti': [
+        {
+          naziv: '',
+          tip: 'Topla Predjela, Steak i Riblji Specijaliteti',
+          opis: '',
+          cenaMala: '',
+          cenaVelika: '',
+          slika:
+            'https://static.wixstatic.com/media/2885f7_1f65b5dc442844c88a517d6455ba7cfd~mv2.png/v1/fit/w_778,h_783,q_90/2885f7_1f65b5dc442844c88a517d6455ba7cfd~mv2.webp',
+        },
+      ],
+      'Jela Po Porudzbini': [
+        {
+          naziv: '',
+          tip: 'Jela Po Porudzbini',
+          opis: '',
+          cenaMala: '',
+          cenaVelika: '',
+          slika:
+            'https://static.wixstatic.com/media/2885f7_ace0be4f8a524aee88c20a3eb3001164~mv2.png/v1/fit/w_778,h_783,q_90/2885f7_ace0be4f8a524aee88c20a3eb3001164~mv2.webp',
+        },
+      ],
+      'Jela Sa Roštilja i Pečenja': [
+        {
+          naziv: '',
+          tip: 'Jela Sa Roštilja i Pečenja',
+          opis: '',
+          cenaMala: '',
+          cenaVelika: '',
+          slika:
+            'https://static.wixstatic.com/media/2885f7_b0e509c444a64620afbfc9aa40e4fce3~mv2.png/v1/fit/w_778,h_783,q_90/2885f7_b0e509c444a64620afbfc9aa40e4fce3~mv2.webp',
+        },
+      ],
+      Salate: [
+        {
+          naziv: '',
+          tip: 'Salate',
+          opis: '',
+          cenaMala: '',
+          cenaVelika: '',
+          slika:
+            'https://static.wixstatic.com/media/2885f7_3b24d3fc9ac444d0837ede35cc76786a~mv2.png/v1/fit/w_778,h_783,q_90/2885f7_3b24d3fc9ac444d0837ede35cc76786a~mv2.webp',
+        },
+      ],
+      'Prilozi i Deserti': [
+        {
+          naziv: '',
+          tip: 'Prilozi i Deserti',
+          opis: '',
+          cenaMala: '',
+          cenaVelika: '',
+          slika:
+            'https://static.wixstatic.com/media/2885f7_4607ea33cf6a4eec93e458accb8cc0cf~mv2.png/v1/fit/w_778,h_783,q_90/2885f7_4607ea33cf6a4eec93e458accb8cc0cf~mv2.webp',
+        },
+      ],
+      'Topli Napici i Vode': [
+        {
+          naziv: '',
+          tip: 'Topli Napici i Vode',
+          opis: '',
+          cenaMala: '',
+          cenaVelika: '',
+          slika:
+            'https://static.wixstatic.com/media/2885f7_698e5a18b0fa4d5f937f60baf05a935c~mv2.png/v1/fit/w_778,h_783,q_90/2885f7_698e5a18b0fa4d5f937f60baf05a935c~mv2.webp',
+        },
+      ],
+      'Prirodni Sokovi i Gazirani Sokovi': [
+        {
+          naziv: '',
+          tip: 'Prirodni Sokovi i Gazirani Sokovi',
+          opis: '',
+          cenaMala: '',
+          cenaVelika: '',
+          slika:
+            'https://static.wixstatic.com/media/2885f7_31f923650324477a820234873714646f~mv2.png/v1/fit/w_778,h_783,q_90/2885f7_31f923650324477a820234873714646f~mv2.webp',
+        },
+      ],
+      'Rakije i Konjak': [
+        {
+          naziv: '',
+          tip: 'Rakije i Konjak',
+          opis: '',
+          cenaMala: '',
+          cenaVelika: '',
+          slika:
+            'https://static.wixstatic.com/media/2885f7_55924231ccf64d07a43e552d37d148b7~mv2.png/v1/fit/w_778,h_783,q_90/2885f7_55924231ccf64d07a43e552d37d148b7~mv2.webp',
+        },
+      ],
+      'Vodka, Liker i Gin': [
+        {
+          naziv: '',
+          tip: 'Vodka, Liker i Gin',
+          opis: '',
+          cenaMala: '',
+          cenaVelika: '',
+          slika:
+            'https://static.wixstatic.com/media/2885f7_75ab3265a96b4415ad27c451f164efbe~mv2.png/v1/fit/w_778,h_783,q_90/2885f7_75ab3265a96b4415ad27c451f164efbe~mv2.webp',
+        },
+      ],
+      'Whiskey i Piva': [
+        {
+          naziv: '',
+          tip: 'Whiskey i Piva',
+          opis: '',
+          cenaMala: '',
+          cenaVelika: '',
+          slika:
+            'https://static.wixstatic.com/media/2885f7_1d0a94627b3b46f9bf950048f5bc38ba~mv2.png/v1/fit/w_778,h_783,q_90/2885f7_1d0a94627b3b46f9bf950048f5bc38ba~mv2.webp',
+        },
+      ],
+      Vina: [
+        {
+          naziv: '',
+          tip: 'Vina',
+          opis: '',
+          cenaMala: '',
+          cenaVelika: '',
+          slika:
+            'https://static.wixstatic.com/media/2885f7_ea05208cd6574690adc3675f9efcb9f8~mv2.png/v1/fit/w_778,h_783,q_90/2885f7_ea05208cd6574690adc3675f9efcb9f8~mv2.webp',
+        },
+      ],
+    },
+    radnoVreme: {
+      monday: {
+        otvaranje: '',
+        zatvaranje: '',
+      },
+      tuesday: {
+        otvaranje: '00:00',
+        zatvaranje: '22:00',
+      },
+      wednesday: {
+        otvaranje: '00:00',
+        zatvaranje: '22:00',
+      },
+      thursday: {
+        otvaranje: '00:00',
+        zatvaranje: '22:00',
+      },
+      friday: {
+        otvaranje: '00:00',
+        zatvaranje: '22:00',
+      },
+      saturday: {
+        otvaranje: '00:00',
+        zatvaranje: '22:00',
+      },
+      sunday: {
+        otvaranje: '00:00',
+        zatvaranje: '17:00',
       },
     },
   },
