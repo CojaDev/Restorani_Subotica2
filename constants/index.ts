@@ -26,7 +26,7 @@ export const KATEGORIJE = [
     slika: '',
   },
   {
-    naziv: 'FastFood',
+    naziv: 'Fast Food',
     key: 'fast',
     slika: '',
   },
@@ -193,15 +193,7 @@ export const STEPS = [
     key: '3',
   },
 ];
-export const DANISRP = [
-  'Ponedeljak',
-  'Utorak',
-  'Sreda',
-  'Četvrtak',
-  'Petak',
-  'Subota',
-  'Nedelja',
-];
+
 export const DANI = [
   { dan: 'monday', danSrp: 'Ponedeljak' },
   { dan: 'tuesday', danSrp: 'Utorak' },
