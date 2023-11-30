@@ -1258,7 +1258,7 @@ export const RERSTORANI = [
           opis: '2 kobasice , 1 karađordjeva , 5 uštipaka , 2 bela mesa rolovana u slanini , 5 ćevapa , 1 punjeno belo, 500 grama pomfrita, 4 lepinje, sezonska salata, luk u pavlaci i tartar sos 1.3 kg mesa',
           cenaMala: 2500,
           cenaVelika: 2500,
-          slika: 'https://cdn.bestfood.rs/w/960/h/720/media/foods/Mix-Oval.png',
+          slika: '',
         },
         {
           naziv: 'Best Grande Mix',
@@ -1266,7 +1266,7 @@ export const RERSTORANI = [
           opis: '10 uštipaka , 10 ćevapa , 1 kobasica , 1 rolovano belo , 1 batak , pileća korpa , 1 punjeno belo , slanina , pomfrit 500 gr, 6 lepinja',
           cenaMala: 3200,
           cenaVelika: 3200,
-          slika: 'https://cdn.bestfood.rs/w/960/h/720/media/foods/Grand.png',
+          slika: '',
         },
       ],
       'Jela sa roštilja': [
@@ -1276,8 +1276,7 @@ export const RERSTORANI = [
           opis: 'Juneće meso, lepinja, sezonska salata i luk u pavlaci 170g + 250g pomfrita',
           cenaMala: 450,
           cenaVelika: 730,
-          slika:
-            'https://cdn.bestfood.rs/w/960/h/720/media/foods/Pljeskavica-Best.png ',
+          slika: ' ',
         },
 
         {
@@ -1286,8 +1285,7 @@ export const RERSTORANI = [
           opis: 'Pileće meso, lepinja, sezonska salata i luk u pavlaci',
           cenaMala: 780,
           cenaVelika: 780,
-          slika:
-            'https://cdn.bestfood.rs/w/960/h/720/media/foods/Punjena-pljeskavica-1.png',
+          slika: '',
         },
         {
           naziv: 'Pileća pljeskavica u porciji',
@@ -1295,8 +1293,7 @@ export const RERSTORANI = [
           opis: 'Juneće meso, suvi vrat, trapist, lepinja, sezonska salata i luk u pavlaci',
           cenaMala: 450,
           cenaVelika: 450,
-          slika:
-            'https://cdn.bestfood.rs/w/960/h/720/media/foods/Velika-pljeskavica-11.png',
+          slika: '',
         },
         {
           naziv: 'Pljeskavica gurmanska u porciji',
@@ -1304,8 +1301,7 @@ export const RERSTORANI = [
           opis: 'Juneće meso, suvi vrat, trapist, lepinja, sezonska salata i luk u pavlaci',
           cenaMala: 470,
           cenaVelika: 750,
-          slika:
-            'https://cdn.bestfood.rs/w/960/h/720/media/foods/Gurmanska-mala-porcija.png',
+          slika: '',
         },
         {
           naziv: 'Pileće belo u porciji',
@@ -1313,8 +1309,7 @@ export const RERSTORANI = [
           opis: 'Pileće belo meso, lepinja, sezonska salata i luk u pavlaci 180g pilećeg mesa + 150g pomfrita',
           cenaMala: 570,
           cenaVelika: 570,
-          slika:
-            'https://cdn.bestfood.rs/w/960/h/720/media/foods/IMG_7840-600x400.jpg',
+          slika: '',
         },
         {
           naziv: 'Pileći batak porcija',
@@ -1322,8 +1317,7 @@ export const RERSTORANI = [
           opis: 'Pileći batak, lepinja, sezonska salata i luk u pavlaci',
           cenaMala: 550,
           cenaVelika: 550,
-          slika:
-            'https://cdn.bestfood.rs/w/960/h/720/media/foods/Porcija-Belo.png',
+          slika: '',
         },
         {
           naziv: 'Rolovano pileće belo u slanini',
@@ -1331,8 +1325,7 @@ export const RERSTORANI = [
           opis: 'Pileće meso, slanina, lepinja, sezonska salata i luk u pavlaci',
           cenaMala: 520,
           cenaVelika: 520,
-          slika:
-            'https://cdn.bestfood.rs/w/960/h/720/media/foods/Rolovano-pilece-belo-1.png',
+          slika: '',
         },
         {
           naziv: 'Pileće punjeno belo u porciji',
@@ -1340,8 +1333,7 @@ export const RERSTORANI = [
           opis: 'Pileće meso, trapist, šampinjoni, šunka, lepinja, prilozi po vašoj želji',
           cenaMala: 590,
           cenaVelika: 590,
-          slika:
-            'https://cdn.bestfood.rs/w/960/h/720/media/foods/Punjano-belo-punjeni-batak.png',
+          slika: '',
         },
         {
           naziv: 'Porcija ćevapa',
@@ -1349,7 +1341,7 @@ export const RERSTORANI = [
           opis: 'M: 5 ćevapa 170g + 250g pomfrit, luk u pavlaci i sezonska salata, V: 10 ćevapa 350g +150g pomfrit, luk u pavlaci i sezonska salata',
           cenaMala: 450,
           cenaVelika: 630,
-          slika: 'https://cdn.bestfood.rs/w/960/h/720/media/foods/5-cevapa.png',
+          slika: '',
         },
         {
           naziv: 'Pileći specijal',
@@ -1357,8 +1349,7 @@ export const RERSTORANI = [
           opis: 'Pileće belo meso, trapist, šampinjoni, luk, lepinja, sezonska salata',
           cenaMala: 470,
           cenaVelika: 470,
-          slika:
-            'https://cdn.bestfood.rs/w/960/h/720/media/foods/Pileci-specijal-1.png',
+          slika: '',
         },
         {
           naziv: 'Leskovački uštipci',
@@ -1366,7 +1357,7 @@ export const RERSTORANI = [
           opis: 'M: 5 komada uštipaka 200g + 150g pomfrita, V: 10 komada uštipaka 400g + 150g pomfrita ',
           cenaMala: 470,
           cenaVelika: 620,
-          slika: 'https://cdn.bestfood.rs/w/960/h/720/media/foods/Ustipci.png',
+          slika: '',
         },
         {
           naziv: 'Bela Vešalica',
@@ -1374,8 +1365,7 @@ export const RERSTORANI = [
           opis: 'Bela Vešalica',
           cenaMala: 550,
           cenaVelika: 550,
-          slika:
-            'https://cdn.bestfood.rs/w/960/h/720/media/foods/Bela-vesalica.png',
+          slika: '',
         },
         {
           naziv: 'Dimljena Vešalica',
@@ -1383,7 +1373,7 @@ export const RERSTORANI = [
           opis: 'Dimljena Vešalica',
           cenaMala: 600,
           cenaVelika: 600,
-          slika: 'https://cdn.bestfood.rs/w/960/h/720/media/foods/Vesalica.png',
+          slika: '',
         },
         {
           naziv: 'Kobasica u porciji',
@@ -1391,8 +1381,7 @@ export const RERSTORANI = [
           opis: 'Kobasica, sezonska salata i luk u pavlaci',
           cenaMala: 470,
           cenaVelika: 470,
-          slika:
-            'https://cdn.bestfood.rs/w/960/h/720/media/foods/Kobasica1.png',
+          slika: '',
         },
       ],
 
@@ -1403,8 +1392,7 @@ export const RERSTORANI = [
           opis: '5 ćevapa i sezonska salata',
           cenaMala: 330,
           cenaVelika: 330,
-          slika:
-            'https://cdn.bestfood.rs/w/960/h/720/media/foods/5-u-lepinji.png',
+          slika: '',
         },
         {
           naziv: 'Kobasice u lepinji',
@@ -1412,7 +1400,7 @@ export const RERSTORANI = [
           opis: 'Kobasica i sezonska salata',
           cenaMala: 350,
           cenaVelika: 350,
-          slika: 'https://cdn.bestfood.rs/w/960/h/720/media/foods/Kobasica.png',
+          slika: '',
         },
         {
           naziv: 'Ljuta pljeskavica u lepinji',
@@ -1420,8 +1408,7 @@ export const RERSTORANI = [
           opis: 'Juneće meso, tucana ljuta paprika, lepinja, prilozi po vašoj želji',
           cenaMala: 330,
           cenaVelika: 330,
-          slika:
-            'https://cdn.bestfood.rs/w/960/h/720/media/foods/Ljuta-pljeskavica-1.png',
+          slika: '',
         },
         {
           naziv: 'Pljeskavica u lepinji',
@@ -1429,8 +1416,7 @@ export const RERSTORANI = [
           opis: 'Juneće meso, lepinja, sezonska salata',
           cenaMala: 330,
           cenaVelika: 330,
-          slika:
-            'https://cdn.bestfood.rs/w/960/h/720/media/foods/pljeska-Best.png',
+          slika: '',
         },
         {
           naziv: 'Pileća pljeskavica u lepinji',
@@ -1438,8 +1424,7 @@ export const RERSTORANI = [
           opis: 'Pileće meso, lepinja, sezonska salata',
           cenaMala: 320,
           cenaVelika: 320,
-          slika:
-            'https://cdn.bestfood.rs/w/960/h/720/media/foods/Pileca-pljeskavica.png',
+          slika: '',
         },
         {
           naziv: 'Pileće belo u lepinji',
@@ -1447,8 +1432,7 @@ export const RERSTORANI = [
           opis: 'Pileće belo meso, lepinja, sezonska salata',
           cenaMala: 410,
           cenaVelika: 410,
-          slika:
-            'https://cdn.bestfood.rs/w/960/h/720/media/foods/Belo-meso.png',
+          slika: '',
         },
         {
           naziv: 'Pileći batak u lepinji',
@@ -1456,8 +1440,7 @@ export const RERSTORANI = [
           opis: 'Pileći batak, lepinja, sezonska salata',
           cenaMala: 400,
           cenaVelika: 400,
-          slika:
-            'https://cdn.bestfood.rs/w/960/h/720/media/foods/Batak-u-lepinji.png',
+          slika: '',
         },
         {
           naziv: 'Pljeskavica gurmanska',
@@ -1465,8 +1448,7 @@ export const RERSTORANI = [
           opis: 'Juneće meso, suvi vrat, trapist, lepinja, sezonska salata',
           cenaMala: 350,
           cenaVelika: 350,
-          slika:
-            'https://cdn.bestfood.rs/w/960/h/720/media/foods/Gurmanska-Pljeskavica.png',
+          slika: '',
         },
       ],
 
@@ -1477,8 +1459,7 @@ export const RERSTORANI = [
           opis: 'Pohovani svinjski file, pomfrit, lepinja, ruska salata i tartar sos',
           cenaMala: 620,
           cenaVelika: 620,
-          slika:
-            'https://cdn.bestfood.rs/w/960/h/720/media/foods/Becka-Snicla-1.png',
+          slika: '',
         },
         {
           naziv: 'Pileće pohovano belo meso',
@@ -1486,8 +1467,7 @@ export const RERSTORANI = [
           opis: 'Pohovano pileće belo meso, pomfrit, lepinja, ruska salata i tartar sos',
           cenaMala: 520,
           cenaVelika: 520,
-          slika:
-            'https://cdn.bestfood.rs/w/960/h/720/media/foods/becka-600x392.png',
+          slika: '',
         },
         {
           naziv: 'Karađorđeva šnicla',
@@ -1495,8 +1475,7 @@ export const RERSTORANI = [
           opis: 'Pohovani svinjski file punjen šunkom i trapistom, pomfrit, lepinja, ruska salata i tartar sos',
           cenaMala: 670,
           cenaVelika: 670,
-          slika:
-            'https://cdn.bestfood.rs/w/960/h/720/media/foods/Karadjordjeva-1.png',
+          slika: '',
         },
         {
           naziv: 'Pileća korpa ',
@@ -1504,8 +1483,7 @@ export const RERSTORANI = [
           opis: 'M: Pohovani pileći file, lepinja, ruska salata i tartar sos 300g pilećeg mesa + 150g pomfrita, V: 600g pilećeg mesa + 300g pomfrita ',
           cenaMala: 620,
           cenaVelika: 1200,
-          slika:
-            'https://cdn.bestfood.rs/w/960/h/720/media/foods/Pileca-korpica.png',
+          slika: '',
         },
         {
           naziv: 'Rolnice šunka sir u porciji',
@@ -1513,8 +1491,7 @@ export const RERSTORANI = [
           opis: 'Pohovani svinjski file, pomfrit, lepinja, ruska salata i tartar sos',
           cenaMala: 520,
           cenaVelika: 520,
-          slika:
-            'https://cdn.bestfood.rs/w/960/h/720/media/foods/Rolnice-1.png',
+          slika: '',
         },
       ],
       Sendviči: [
@@ -1524,8 +1501,7 @@ export const RERSTORANI = [
           opis: 'Pavlaka, kečap, majonez, kulen, slanina, jaja, suvi vrat',
           cenaMala: 260,
           cenaVelika: 260,
-          slika:
-            'https://cdn.bestfood.rs/w/960/h/720/media/foods/vojvodjanski-600x394.png',
+          slika: '',
         },
         {
           naziv: 'Topli sendvič sa kulenom',
@@ -1533,8 +1509,7 @@ export const RERSTORANI = [
           opis: 'Kulen, kečap, majonez, prilozi po vašoj želji',
           cenaMala: 240,
           cenaVelika: 240,
-          slika:
-            'https://cdn.bestfood.rs/w/960/h/720/media/foods/Sendiv-kulen.png',
+          slika: '',
         },
         {
           naziv: 'Topli sendvič sa pilećim grudima',
@@ -1542,8 +1517,7 @@ export const RERSTORANI = [
           opis: 'Pileće grudi, kečap, majonez, prilozi po vašoj želji',
           cenaMala: 240,
           cenaVelika: 240,
-          slika:
-            'https://cdn.bestfood.rs/w/960/h/720/media/foods/pilecim-grudima-600x390.png',
+          slika: '',
         },
         {
           naziv: 'Topli sendvič sa šunkom ',
@@ -1551,8 +1525,7 @@ export const RERSTORANI = [
           opis: 'Šunka, kečap, majonez, prilozi po vašoj želji',
           cenaMala: 240,
           cenaVelika: 240,
-          slika:
-            'https://cdn.bestfood.rs/w/960/h/720/media/foods/sa-sunkom-600x393.png',
+          slika: '',
         },
         {
           naziv: 'Topli sendvič sa suvim vratom',
@@ -1560,8 +1533,7 @@ export const RERSTORANI = [
           opis: 'Suvi vrat, kečap, majonez, prilozi po vašoj želji',
           cenaMala: 240,
           cenaVelika: 240,
-          slika:
-            'https://cdn.bestfood.rs/w/960/h/720/media/foods/Sendvic-vrat.png',
+          slika: '',
         },
         {
           naziv: 'Vojvođanski sendvič',
@@ -1569,8 +1541,7 @@ export const RERSTORANI = [
           opis: 'Kulen, slanina, jaja, kečap, majonez, pavlaka, prilozi po vašoj želji',
           cenaMala: 260,
           cenaVelika: 260,
-          slika:
-            'https://cdn.bestfood.rs/w/960/h/720/media/foods/Mix-sendvic.png',
+          slika: '',
         },
       ],
 
@@ -1581,8 +1552,7 @@ export const RERSTORANI = [
           opis: 'Mućkalica',
           cenaMala: 450,
           cenaVelika: 450,
-          slika:
-            'https://cdn.bestfood.rs/w/960/h/720/media/foods/muckalica-600x392.png',
+          slika: '',
         },
       ],
       'Salate i prilozi': [
@@ -1592,8 +1562,7 @@ export const RERSTORANI = [
           opis: 'Marmelada - 150 rsd, Eurokrem - 170 rsd, Eurokrem plazma - 190 rsd, Nutela - 180 rsd, Nutela plazma - 200 rsd',
           cenaMala: 150,
           cenaVelika: 200,
-          slika:
-            'https://cdn.bestfood.rs/w/960/h/720/media/foods/Palacinka-Plazma-marmelada.png',
+          slika: '',
         },
         {
           naziv: 'Pomfrit',
@@ -1601,8 +1570,7 @@ export const RERSTORANI = [
           opis: 'M:150g V:300g',
           cenaMala: 250,
           cenaVelika: 300,
-          slika:
-            'https://cdn.bestfood.rs/w/960/h/720/media/foods/muckalica-600x392.png',
+          slika: '',
         },
       ],
     },
@@ -6212,6 +6180,7 @@ export const RERSTORANI = [
     kordinate: [46.09702487414927, 19.671502647863363],
     vlasnik: '',
     imejl: '',
+    id: '17',
     slike: [
       'https://lh3.googleusercontent.com/p/AF1QipM0fmUfgkPEpaOJ6km7Hj7fI_EZgrkW5fJR1p0f=s680-w680-h510',
       'https://lh3.googleusercontent.com/p/AF1QipMFEGveLk5P3Ex32cdS226xihMdSSFcj70tSfP2=s680-w680-h510',
@@ -6428,6 +6397,7 @@ export const RERSTORANI = [
     websajt: 'https://www.restoranshiraz.com/',
     kordinate: [46.10178085999133, 19.712748754146325],
     vlasnik: '',
+    id: '18',
     imejl: 'shirazdoo23@gmail.com',
     slike: [
       'https://static.wixstatic.com/media/2885f7_e5a9214632834d5abadc4f630041a7de~mv2.jpg/v1/fit/w_778,h_783,q_90/2885f7_e5a9214632834d5abadc4f630041a7de~mv2.webp',
@@ -6576,27 +6546,27 @@ export const RERSTORANI = [
         zatvaranje: '',
       },
       tuesday: {
-        otvaranje: '00:00',
+        otvaranje: '12:00',
         zatvaranje: '22:00',
       },
       wednesday: {
-        otvaranje: '00:00',
+        otvaranje: '12:00',
         zatvaranje: '22:00',
       },
       thursday: {
-        otvaranje: '00:00',
+        otvaranje: '12:00',
         zatvaranje: '22:00',
       },
       friday: {
-        otvaranje: '00:00',
+        otvaranje: '12:00',
         zatvaranje: '22:00',
       },
       saturday: {
-        otvaranje: '00:00',
+        otvaranje: '12:00',
         zatvaranje: '22:00',
       },
       sunday: {
-        otvaranje: '00:00',
+        otvaranje: '12:00',
         zatvaranje: '17:00',
       },
     },

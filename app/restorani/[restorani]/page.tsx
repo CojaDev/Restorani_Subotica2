@@ -5,18 +5,14 @@ import RestoranBanner from '@/components/RestoranBanner';
 import RestoranInfo from '@/components/RestoranInfo';
 import { RERSTORANI } from '@/constants/restorani';
 import { useState } from 'react';
-import Image from 'next/image';
+import Jelovnik from '@/components/Jelovnik';
+import Galerija from '@/components/Galerija';
+import Mapa from '@/components/Mapa';
 
 type nameprop = {
   params: any;
 };
-interface Jelo {
-  naziv: string;
-  opis: string;
-  cenaMala: any;
-  cenaVelika: number | null;
-  slika: URL;
-}
+
 const RestoranPage = ({ params }: nameprop) => {
   const { restorani } = params;
 
@@ -31,22 +27,6 @@ const RestoranPage = ({ params }: nameprop) => {
 
   const [sectionTag, setSectionTag] = useState(1);
 
-  function isValidURL(url: string): boolean {
-    try {
-      new URL(url);
-      return true;
-    } catch (e) {
-      return false;
-    }
-  }
-
-  const handleDrag = (event: any) => {
-    // Prevent default drag behavior
-    event.preventDefault();
-
-    // Apply pointer-events: none during drag
-    event.target.style.pointerEvents = 'none';
-  };
   return (
     <div className="flex-center flex-col w-full sm:mt-2 mt-24">
       <RestoranBanner restoran={restoran} />
@@ -79,184 +59,9 @@ const RestoranPage = ({ params }: nameprop) => {
         </button>
       </div>
       <div className="bg-slate-400/30 dark:bg-slate-300/40 w-full p-5 pt-2 mt-5 rounded-md">
-        {sectionTag === 1 && (
-          <div className="w-full">
-            <div className="grid grid-cols-1 gap-4">
-              {Object.keys(restoran.meni).map((category) => (
-                <div key={category} className="flex flex-col gap-4">
-                  <h2 className="dark:text-white text-md mt-4 text-xl transition-all capitalize">
-                    {category}
-                  </h2>
-
-                  <div className="flex flex-wrap gap-4">
-                    {restoran.meni[category].map((jelo: Jelo) => (
-                      <div
-                        key={jelo.naziv}
-                        className="flex flex-col border-2 dark:border-white min-w-[335px] border-gray-950/50 p-2 overflow-hidden shadow-lg"
-                      >
-                        {jelo.naziv ||
-                        jelo.opis ||
-                        jelo.cenaMala ||
-                        jelo.cenaVelika ? (
-                          <>
-                            <div className="flex-shrink-0">
-                              <img
-                                src={`${
-                                  jelo.slika || '/logo.png'
-                                }?${Math.random()}`}
-                                alt={jelo.naziv}
-                                width={100}
-                                height={100}
-                                draggable="false"
-                                loading="lazy"
-                                className={`${
-                                  jelo.slika ? 'w-full' : 'w-32'
-                                } h-32 object-cover rounded-lg mx-auto`}
-                                onError={(e: any) => {
-                                  e.target.onerror = null;
-                                  e.target.src = `${'/logo.png'}?${Math.random()}`;
-                                  e.target.style.width = '128px';
-                                }}
-                              />
-                            </div>
-                            <div className="flex flex-col max-w-xs mt-2 h-full">
-                              {jelo.naziv && (
-                                <p className="dark:text-white text-lg">
-                                  {jelo.naziv}
-                                </p>
-                              )}
-                              {jelo.opis && (
-                                <p className="dark:text-white opacity-70 dark:opacity-60 max-w-xs">
-                                  {jelo.opis}
-                                </p>
-                              )}
-                              {(jelo.cenaMala === jelo.cenaVelika ||
-                                jelo.cenaMala === null ||
-                                jelo.cenaMala === '') && (
-                                <div className="flex mt-auto mb-2">
-                                  <p className="dark:text-white font-semibold">
-                                    Cena: {jelo.cenaMala} RSD
-                                  </p>
-                                </div>
-                              )}
-                              {jelo.cenaMala !== jelo.cenaVelika &&
-                                jelo.cenaMala !== null &&
-                                jelo.cenaMala !== '' && (
-                                  <div className="flex mt-auto mb-2">
-                                    <p className="dark:text-white font-semibold">
-                                      Mala Porcija {jelo.cenaMala} RSD
-                                    </p>
-                                    <p className="dark:text-white ml-auto font-semibold">
-                                      Velika Porcija {jelo.cenaVelika} RSD
-                                    </p>
-                                  </div>
-                                )}
-                            </div>
-                          </>
-                        ) : (
-                          <div className="flex-shrink-0 ">
-                            <a href={jelo.slika.toString()}>
-                              <img
-                                src={`${
-                                  jelo.slika || '/logo.png'
-                                }?${Math.random()}`}
-                                alt={jelo.naziv}
-                                className="w-full h-full object-cover rounded-lg mx-auto min-w-[335px] max-w-[335px]"
-                                onError={(e: any) => {
-                                  e.target.onerror = null;
-                                  e.target.src = `${'/logo.png'}?${Math.random()}`;
-                                  e.target.style.width = '128px';
-                                }}
-                              />
-                            </a>
-                          </div>
-                        )}
-                        {jelo.naziv ||
-                        jelo.opis ||
-                        jelo.cenaMala ||
-                        jelo.cenaVelika ? (
-                          <a
-                            className="text-center p-2 border-2 border-orange-500 bg-orange-500 rounded-2xl mt-auto font-medium hover:bg-orange-500/80 transition-all"
-                            href={`tel:${restoran.brojTel}`}
-                          >
-                            Naruči
-                          </a>
-                        ) : null}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
-
-        {sectionTag === 2 && (
-          <div className="w-full">
-            {/* Section for restaurant images */}
-            <div className="mb-8">
-              <h3 className="dark:text-white text-lg mb-2">Restoran</h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                {restoran.slike.map((img: any, index: any) => (
-                  <img
-                    key={index}
-                    src={img}
-                    className={`w-full h-40 object-cover rounded-md ${
-                      isValidURL(img) ? '' : 'hidden'
-                    }`}
-                    onError={(e: any) => {
-                      e.target.onerror = null;
-                      e.target.style.display = 'none'; // Hide the image if the URL is invalid
-                    }}
-                  />
-                ))}
-              </div>
-            </div>
-
-            {/* Section for images from all foods */}
-            <div>
-              <h3 className="dark:text-white text-lg mb-2">Hrana</h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                {Object.values(restoran.meni).flatMap((category: any) =>
-                  category.map((jelo: any) => (
-                    <img
-                      key={jelo.naziv}
-                      src={jelo.slika}
-                      className={`w-full h-40 object-cover rounded-md ${
-                        isValidURL(jelo.slika) ? '' : 'hidden'
-                      }`}
-                      onError={(e: any) => {
-                        e.target.onerror = null;
-                        e.target.style.display = 'none'; // Hide the image if the URL is invalid
-                      }}
-                    />
-                  ))
-                )}
-              </div>
-            </div>
-          </div>
-        )}
-        {sectionTag === 3 && (
-          <div className="mapa relative ">
-            <iframe
-              width="100%"
-              height="400"
-              style={{ border: 0, userSelect: 'none', padding: '2px' }}
-              src={`https://www.openstreetmap.org/export/embed.html?bbox=${restoran.kordinate[1]},${restoran.kordinate[0]},${restoran.kordinate[1]},${restoran.kordinate[0]}&amp;layer=mapnik&zoom=18&zoomcontrol=0&scalecontrol=0`}
-              allowFullScreen
-              draggable="false"
-              sandbox="allow-scripts"
-            ></iframe>
-            <Image
-              src="/marker.png"
-              alt="marker"
-              className="absolute top-2/4 left-2/4 z-50 -translate-x-2/4  -translate-y-2/4"
-              width={35}
-              height={40}
-              draggable="false"
-            />
-          </div>
-        )}
+        {sectionTag === 1 && <Jelovnik restoran={restoran} />}
+        {sectionTag === 2 && <Galerija restoran={restoran} />}
+        {sectionTag === 3 && <Mapa restoran={restoran} />}
       </div>
     </div>
   );

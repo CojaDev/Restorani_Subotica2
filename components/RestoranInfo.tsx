@@ -35,7 +35,7 @@ const RestoranInfo = ({ restoran }: resProp) => {
             INFO:
           </button>
           {openState === 2 && (
-            <div className="sm:absolute relative left-0   w-full  p-2 pt-0  rounded-b-lg dark:bg-[#9199A7] bg-[#BEC5D7] shadow-md -mt-0.5">
+            <div className="sm:absolute relative left-0 z-10   w-full  p-2 pt-0  rounded-b-lg dark:bg-[#9199A7] bg-[#BEC5D7] shadow-md -mt-0.5">
               <p className="dark:text-white text-md my-2">
                 <strong>Broj Telefona:</strong>{' '}
                 <a
@@ -61,7 +61,7 @@ const RestoranInfo = ({ restoran }: resProp) => {
             </div>
           )}
         </div>
-        <div className="flex-1 bg-slate-400/40 dark:bg-slate-300/50 p-1 min-w-full sm:min-w-0 relative rounded-lg ">
+        <div className="flex-1 bg-slate-400/40 dark:bg-slate-300/50 p-1 min-w-full sm:min-w-0 relative  rounded-lg ">
           <button
             className="dark:text-white text-lg w-full hover:bg-white/60 dark:hover:bg-slate-500/60 transition-all p-2 rounded-md  "
             onClick={() => {
@@ -75,7 +75,7 @@ const RestoranInfo = ({ restoran }: resProp) => {
             O NAMA:
           </button>
           {openState === 1 && (
-            <div className="sm:absolute relative left-0   w-full  p-2 pt-0  rounded-b-lg dark:bg-[#979FAA] bg-[#B9C3D5]/90 shadow-md -mt-0.5">
+            <div className="sm:absolute relative left-0  z-10  w-full  p-2 pt-0  rounded-b-lg dark:bg-[#979FAA] bg-[#B9C3D5]/90 shadow-md -mt-0.5">
               <p className="dark:text-white text-md">- {restoran.opis}</p>
             </div>
           )}
@@ -94,11 +94,13 @@ const RestoranInfo = ({ restoran }: resProp) => {
             RADNO VREME:
           </button>
           {openState === 3 && (
-            <div className="sm:absolute relative left-0 w-full p-2 pt-0 rounded-b-lg dark:bg-[#929CA5] bg-[#BFC9D5] shadow-md -mt-0.5">
+            <div className="sm:absolute relative left-0 w-full p-2 pt-0 rounded-b-lg dark:bg-[#929CA5] z-10 bg-[#BFC9D5] shadow-md -mt-0.5">
               {Object.entries(restoran.radnoVreme).map(([day, hours]: any) => (
                 <p key={day} className="dark:text-white text-md">
                   <strong>{dayNames[day]}: </strong>
-                  {`${hours.otvaranje} / ${hours.zatvaranje}`}
+                  {hours.otvaranje === '' && hours.zatvaranje === ''
+                    ? 'Ne radi'
+                    : `${hours.otvaranje} / ${hours.zatvaranje}`}
                 </p>
               ))}
             </div>
