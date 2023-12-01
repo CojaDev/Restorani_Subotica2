@@ -1,5 +1,5 @@
 'use client';
-import { KATEGORIJE, DANI, DANISRP } from '@/constants';
+import { KATEGORIJE, DANI } from '@/constants';
 import { useState } from 'react';
 import Image from 'next/image';
 
@@ -49,7 +49,6 @@ const Forma = () => {
     },
   });
   const nextStep = () => {
-    console.log('Podaci poslati:', restoran);
     setStep(step + 1);
   };
 
@@ -58,15 +57,15 @@ const Forma = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    setStep(step + 1);
     console.log('Podaci poslati:', restoran);
   };
 
   return (
-    <section className="w-full flex mt-48 p-2 ">
-      <div className="flex-1 sm:flex hidden">
-        <div className="flex flex-col flex-1 my-auto">
-          <div className="relative w-64 h-64   mx-auto">
+    <section className="w-full flex gap-1 mt-48 p-2 ">
+      <div className="flex-1 lg:flex hidden">
+        <div className="flex flex-col gap-3 flex-1 my-auto">
+          <div className="relative lg:w-64 lg:h-64 h-48 w-48 mx-auto">
             <Image
               src="/novo.jpg"
               alt="Image 2"
@@ -76,7 +75,7 @@ const Forma = () => {
               className="rounded-lg"
             />
           </div>
-          <div className="relative w-64 h-64   mx-auto mt-4">
+          <div className="relative lg:w-64 lg:h-64 h-48 w-48 mx-auto">
             <Image
               src="/cta1.jpg"
               alt="Image 2"
@@ -89,7 +88,7 @@ const Forma = () => {
         </div>
       </div>
       <form
-        className="flex sm:gap-2 flex-col gap-3 items-center border border-black rounded-2xl bg-white/50 flex-1 p-2 sm:mx-0 mx-4"
+        className="flex sm:gap-2 flex-col gap-3 items-center border border-black rounded-b-3xl rounded-t-xl bg-white/50 dark:bg-white/80 flex-1 p-2 sm:mx-0 mx-4"
         onSubmit={handleSubmit}
       >
         {step === 1 && (
@@ -562,7 +561,7 @@ const Forma = () => {
           <>
             <div className="flex flex-col mt-4">
               <h2 className="text-2xl font-medium mb-3 text-center">
-                Unesi Vaše Podatke
+                Unesite Vaše Podatke
               </h2>
 
               <div className="flex flex-col mb-2">
@@ -571,10 +570,10 @@ const Forma = () => {
                     type="text"
                     name="ime"
                     placeholder="Vaše Ime"
-                    className="text-md p-2 border border-black focus:outline-0 rounded-lg mb-3 mr-2"
+                    className="text-md p-2 border border-black focus:outline-0 rounded-lg mb-3 mr-2 w-full"
                     value={restoran.vlasnik}
                     onChange={(e) =>
-                      setRestoran({ ...restoran, ime: e.target.value })
+                      setRestoran({ ...restoran, vlasnik: e.target.value })
                     }
                     required
                   />
@@ -582,22 +581,32 @@ const Forma = () => {
                     type="text"
                     name="email"
                     placeholder="Vaš Email"
-                    className="text-md p-2 border border-black focus:outline-0 rounded-lg mb-2 mr-2"
+                    className="text-md p-2 border border-black focus:outline-0 rounded-lg mb-2 mr-2 w-full"
                     value={restoran.imejl}
                     onChange={(e) =>
                       setRestoran({ ...restoran, imejl: e.target.value })
                     }
                     required
                   />
+                  <div className=" w-full flex items-center gap-3 p-6 py-6 border-2 bg-white border-slate-200 mt-7">
+                    <input
+                      type="checkbox"
+                      name="robot"
+                      id="robot"
+                      className="w-7 h-7 "
+                      required
+                    />
+                    <p>I'm not a robot</p>
+                  </div>
                 </div>
               </div>
             </div>
-            <button
+            <input
+              type="submit"
               className="px-6 py-2 mt-auto bg-black hover:bg-black/70 rounded-3xl text-white -mb-0.5 transition-all"
-              onClick={nextStep}
-            >
-              Dodaj
-            </button>
+              value="Dodaj"
+            />
+
             <button
               className="px-3.5 py-1 hover:text-black/70 border border-black hover:border-black/70 text-sm rounded-3xl mb-2 transition-all"
               onClick={prevStep}
@@ -606,10 +615,44 @@ const Forma = () => {
             </button>
           </>
         )}
+        {step === 6 && (
+          <>
+            <div className="flex flex-col mt-6">
+              <h2 className="text-2xl font-medium mb-3 text-center">
+                Uspesno ste dodali Restoran
+              </h2>
+
+              <div className="flex flex-col mb-2">
+                <div className="flex-center flex-col mb-5 gap-4 mt-6">
+                  <Image
+                    src="/checkmark.png"
+                    alt="checkmark"
+                    width={100}
+                    height={100}
+                  />
+                  <h4 className="max-w-xs text-center">
+                    Naš tim će pažljivo pregledati pružene informacije. Ukoliko
+                    su svi podaci tačni i kompletni, restoran će biti objavljen
+                    u narednim danima.
+                  </h4>
+                </div>
+              </div>
+            </div>
+
+            <button
+              className="px-6 py-2 mt-auto mb-7 bg-black hover:bg-black/70 rounded-3xl text-white  transition-all"
+              onClick={() => {
+                setStep(1);
+              }}
+            >
+              Završi
+            </button>
+          </>
+        )}
       </form>
-      <div className=" sm:flex hidden flex-1">
-        <div className="flex flex-col flex-1 my-auto">
-          <div className="relative w-64 h-64   mx-auto">
+      <div className="lg:flex hidden flex-1">
+        <div className="flex flex-col gap-3 flex-1 my-auto">
+          <div className="relative lg:w-64 lg:h-64 h-48 w-48 mx-auto">
             <Image
               src="/novo.jpg"
               alt="Image 2"
@@ -619,7 +662,7 @@ const Forma = () => {
               className="rounded-lg"
             />
           </div>
-          <div className="relative w-64 h-64   mx-auto mt-4">
+          <div className="relative lg:w-64 lg:h-64 h-48 w-48 mx-auto">
             <Image
               src="/cta1.jpg"
               alt="Image 2"

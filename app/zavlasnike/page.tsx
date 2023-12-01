@@ -1,3 +1,4 @@
+import ContactUs from '@/components/ContactUs';
 import Features from '@/components/Features';
 
 import Forma from '@/components/Forma.jsx';
@@ -74,6 +75,7 @@ const Restorani = () => {
       <Features />
       <Steps />
       <Forma />
+      <ContactUs />
     </>
   );
 };
