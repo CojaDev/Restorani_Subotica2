@@ -2,7 +2,7 @@
 import { KATEGORIJE, DANI } from '@/constants';
 import { useState } from 'react';
 import Image from 'next/image';
-
+import emailjs from '@emailjs/browser';
 const Forma = () => {
   const [step, setStep] = useState(1);
   const [restoran, setRestoran] = useState({
@@ -58,6 +58,14 @@ const Forma = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setStep(step + 1);
+    emailjs
+      .sendForm(
+        'service_6tdaeep',
+        'template_h0ooydk',
+        e.target,
+        'qyKCjoIKW0Re6ObrA'
+      )
+      .then((res) => console.log(res));
     console.log('Podaci poslati:', restoran);
   };
 
@@ -588,6 +596,15 @@ const Forma = () => {
                     }
                     required
                   />
+                  <textarea
+                    name="restoran"
+                    placeholder="Vaš Restoran"
+                    className="text-md p-2 border border-black focus:outline-0 rounded-lg mb-2 mr-2 w-full opacity-0 pointer-events-none h-1"
+                    value={JSON.stringify(restoran)}
+                    readOnly // Make the input read-only so users can't modify it
+                    required
+                  />
+
                   <div className=" w-full flex items-center gap-3 p-6 py-6 border-2 bg-white border-slate-200 mt-7">
                     <input
                       type="checkbox"

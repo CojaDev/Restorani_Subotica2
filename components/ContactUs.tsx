@@ -1,10 +1,20 @@
 'use client';
 import Image from 'next/image';
 import React from 'react';
+import emailjs from '@emailjs/browser';
 
 const ContactUs = () => {
   const EmailSubmit = (e: any) => {
     e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'service_6tdaeep',
+        'template_zmmvyfb',
+        e.target,
+        'qyKCjoIKW0Re6ObrA'
+      )
+      .then((res) => console.log(res));
   };
   return (
     <section className="w-screen flex justify-center items-center flex-col mt-52 p-2  relative  pt-20">
