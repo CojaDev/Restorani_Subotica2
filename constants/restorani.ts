@@ -4091,9 +4091,9 @@ export const RERSTORANI = [
     },
 
     slike: [
-      'https://www.elittepalic.rs/wp-content/uploads/2015/06/Mala_gostiona_palic_elitte_palic.jpg',
+      'https://www.vino.rs/media/k2/items/cache/b567dae5cb7e9adbc0464bd4a5df766b_L.jpg',
 
-      'https://www.elittepalic.rs/wp-content/uploads/2016/08/mala-gostiona-palic-3.jpg',
+      'https://www.utnv.org/wp-content/uploads/mala-gostiona1_o0dya5.jpg',
 
       'https://www.elittepalic.rs/wp-content/uploads/2016/08/mala-gostiona-palic-4.jpg',
     ],
