@@ -4091,7 +4091,7 @@ export const RERSTORANI = [
     },
 
     slike: [
-      'https://www.vino.rs/media/k2/items/cache/b567dae5cb7e9adbc0464bd4a5df766b_L.jpg',
+      'https://visitsubotica.rs/wp-content/uploads/2019/09/Mala-gostiona-1.jpg',
 
       'https://www.utnv.org/wp-content/uploads/mala-gostiona1_o0dya5.jpg',
 
