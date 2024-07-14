@@ -2,8 +2,8 @@
 
 ![Restorani Subotica](restorani_subotica.png)
 <p align="center">
-  <img src="res2.png" alt="Screenshot 2" width="300">
-  <img src="res3.png" alt="Screenshot 3" width="300">
+  <img src="res2.png" alt="Screenshot 2" width="350">
+  <img src="res3.png" alt="Screenshot 3" width="350">
  
 </p>
 
