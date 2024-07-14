@@ -1,6 +1,11 @@
 # Restorani Subotica
 
 ![Restorani Subotica](restorani_subotica.png)
+<p align="center">
+  <img src="res2.png" alt="Screenshot 2" width="345">
+  <img src="res3.png" alt="Screenshot 3" width="345">
+ 
+</p>
 
 Restorani Subotica is a web platform showcasing various restaurants in Subotica. Users can browse through a curated list of restaurants, view detailed information about each one, and make reservations directly through the website.
 
