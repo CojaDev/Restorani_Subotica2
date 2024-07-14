@@ -8,17 +8,14 @@ Restorani Subotica is a web platform showcasing various restaurants in Subotica.
 
 - **Restaurant Listings**: Browse a comprehensive list of restaurants in Subotica.
 - **Search and Filter**: Easily search and filter restaurants by various criteria such as cuisine, location, and rating.
-- **Restaurant Details**: View detailed information about each restaurant, including address, contact info, menu, and customer reviews.
-- **Reservations**: Make reservations directly through the website.
-- **User Accounts**: Register and log in to manage your reservations and submit reviews.
+- **Restaurant Details**: View detailed information about each restaurant, including address, contact info and menu.
+- **Order**: Make orders directly through the website.(this works only on phone)
+
 
 ## Technologies Used
 
 - React
-- Redux
-- Node.js
-- Express
-- MongoDB
+- NextJs
 - TailwindCSS
 
 ## Installation
