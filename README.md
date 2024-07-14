@@ -3,7 +3,7 @@
 ![Restorani Subotica](restorani_subotica.png)
 <p align="center">
   <img src="res2.png" alt="Screenshot 2" width="50%">
-  <img src="res3.png" alt="Screenshot 3" width="445">
+  <img src="res3.png" alt="Screenshot 3" width="50%">
  
 </p>
 
