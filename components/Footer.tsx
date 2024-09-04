@@ -88,7 +88,7 @@ const Footer = () => {
         <p className="text-white">
           Developed by{' '}
           <Link
-            href="https://github.com/CojaDev"
+            href="https://portfolio-coja.vercel.app/"
             target="blank"
             className="orange_gradient font-medium hover:saturate-200 transition-all hover:brightness-125"
           >
